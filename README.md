@@ -34,31 +34,31 @@ Below mentioned are the steps to install, configure & run in your platform/distr
 cd homerlearning
 
 # Install NPM dependencies.
-# Note: You can review the list of dependencies from the below link.
+> Note: You can review the list of dependencies from the below link.
 npm install
 
 
 # Import Script
-# Set MongoDB URL in /scripts/import-data.js
+> Set MongoDB URL in /scripts/import-data.js
 node .\scripts\import-data.js
 
 # You should be getting the following response after running the import script from the `scripts` folder:
-# Import Data Utility Script:
-# Data File: ./scripts/../data/stories.csv
-# Database URL: mongodb://localhost/homerlearningdb
-# Connected to mongo server.
-# Total Records Inserted: 356
+> Import Data Utility Script:
+> Data File: ./scripts/../data/stories.csv
+> Database URL: mongodb://localhost/homerlearningdb
+> Connected to mongo server.
+> Total Records Inserted: 356
 
 
 # Set MongoDB URL in src/app.ts
-# defaults to: mongodb://localhost/homerlearningdb
+> defaults to: mongodb://localhost/homerlearningdb
 
 # Run the app
 npm run start
 
 
 # Run Unit Test
-# Note: unit test will empty the DB - should have differnt db for test
+> Note: unit test will empty the DB - should have differnt db for test
 npm run test
 
 
